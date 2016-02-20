@@ -1,0 +1,16 @@
+@import adjList
+
+pools:
+	<int> 10
+	<from> 10
+	<to> 10
+	<adjList> 3
+
+actions:
+	<int> := <[0..50]>
+	<from> := <['a','b','c','d','e','f','g','h','i','j','k','l','m','n']>
+	<to> := <['a','b','c','d','e','f','g','h','i','j','k','l','m','n']>
+	<adjList> := adjList.AdjList()
+	~<adjList>.addVertex(<int>)
+	#not ~<adjList>.() -> ~<adjList,1>.removeVertex()
+	~<adjList>.addEdge(<from>,<to>)
